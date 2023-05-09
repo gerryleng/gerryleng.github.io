@@ -1,0 +1,280 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>4.6 Big o notation and classification of algorithms | LenxNotes</title><meta name="author" content="Gerry Leng"><meta name="copyright" content="Gerry Leng"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="How to classify algorithms by their complexity in terms of how much time code takes to achieve a result and how much memory it requires. The method of describing the complexity of algorithms in this c">
+<meta property="og:type" content="article">
+<meta property="og:title" content="4.6 Big o notation and classification of algorithms">
+<meta property="og:url" content="http://example.com/2023/04/17/4.6-big-o-notation-and-classification-of-algorithms/index.html">
+<meta property="og:site_name" content="LenxNotes">
+<meta property="og:description" content="How to classify algorithms by their complexity in terms of how much time code takes to achieve a result and how much memory it requires. The method of describing the complexity of algorithms in this c">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.pinimg.com/originals/fb/fe/39/fbfe391f8540e158d904b37adf003616.jpg">
+<meta property="article:published_time" content="2023-04-17T20:17:33.000Z">
+<meta property="article:modified_time" content="2023-04-23T18:02:14.000Z">
+<meta property="article:author" content="Gerry Leng">
+<meta property="article:tag" content="Fundamentals of computational thinking">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.pinimg.com/originals/fb/fe/39/fbfe391f8540e158d904b37adf003616.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2023/04/17/4.6-big-o-notation-and-classification-of-algorithms/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '4.6 Big o notation and classification of algorithms',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-04-23 19:02:14'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://avatars.githubusercontent.com/u/114028212?v=4" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">1</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url('https://i.pinimg.com/originals/fb/fe/39/fbfe391f8540e158d904b37adf003616.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="LenxNotes"><img class="site-icon" src="/img/header-logo.png"/><span class="site-name">LenxNotes</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">4.6 Big o notation and classification of algorithms</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-04-17T20:17:33.000Z" title="Created 2023-04-17 21:17:33">2023-04-17</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-04-23T18:02:14.000Z" title="Updated 2023-04-23 19:02:14">2023-04-23</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/A-Level/">A-Level</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="4.6 Big o notation and classification of algorithms"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p><strong>Suppose you forget the three-digit password lock, each has 10 numbers, how many times do you have to try to crack the password at worst?</strong></p>
+<ol>
+<li>10C3 &#x3D; 10! &#x2F; (3! * (10 - 3)!) &#x3D; 120</li>
+<li>There are 120 combinations, which means that in your worst case, you will have to try 120 times to crack it.</li>
+</ol>
+<ul>
+<li><strong>Factorial:</strong> the product of all positive integers less than or equal to n. e.g. 3! Is 3 × 2 × 1</li>
+</ul>
+<p>	</p>
+<p><strong>What if it is a ten-digit password lock, each has 100 symbols?</strong></p>
+<ol>
+<li>you will have to try 1.731030946 × ₁₀¹³ times, or maybe you’re an extremely lucky fellow, and you just have to try it once to unravel it. But that’s almost never the case that computer scientists care about. A computer scientist might want to take account of time and space requiments to develop algorithms because many applications are time critical, which means that they have to react virtually instantly. Any delay caused by an inefficient algorithm could prevent the system from working properly. Many applications manipulate very large datasets. Where this is the case, a spacially inefficient algorithm may make the problem intractable.</li>
+</ol>
+<h2 id="Functions"><a href="#Functions" class="headerlink" title="Functions"></a>Functions</h2><p>Big O notation is used to describe the growth rate of a function. A function is a mathematical concept that relates each element in one set (called the <strong>domain</strong>) to exactly one element in another set (called the <strong>range</strong>). In other words, a function assigns an output value for each input value.</p>
+<ul>
+<li><strong>Domain:</strong> all the values that maybe input to a mathematical function.</li>
+<li><strong>Codomain:</strong> all the values that maybe output from a mathematical function.</li>
+<li><strong>Range:</strong> The set of values that are actually produced by the function.</li>
+</ul>
+<p>For example, consider the function f(x) &#x3D; x^2. The domain of this function is all real numbers, because we can plug in any real number for x. The codomain is also all real numbers, because the output of the function can be any real number. However, the range of the function is only the set of non-negative real numbers, because the square of any real number is always non-negative.</p>
+<h2 id="Big-o-notation"><a href="#Big-o-notation" class="headerlink" title="Big o notation"></a>Big o notation</h2><p>Big o notation is also known as asymptotic analysis, it is the method of describing <strong>time and space complexity</strong> of an algorithm in order to compare the efficiency of different approaches to a problem. With big o notation we express the runtime in terms of how quickly it grows relative to the <strong>input size</strong>, in the worst-case scenrio: as n gets arbitrarily large.</p>
+<ul>
+<li><strong>Time complexity:</strong> the concept of how much time an algorithm requires.</li>
+<li><strong>Space complexity:</strong> the concept of how much space an algorithm requires.</li>
+<li><strong>Input size:</strong> in big o notation the size of whatever you are asking an algorithm to work with, e.g. data, parameters.</li>
+</ul>
+<p><strong>Big O notation uses five main classdications:</strong></p>
+<p><strong>Use code to describe</strong><br>O(1): </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">print_first_item</span>(<span class="params">items</span>):</span><br><span class="line">    <span class="built_in">print</span>(items[<span class="number">0</span>])</span><br></pre></td></tr></table></figure>
+<p>O(n):</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">print_all_items</span>(<span class="params">items</span>):</span><br><span class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> items:</span><br><span class="line">        <span class="built_in">print</span>(item)</span><br></pre></td></tr></table></figure>
+<p>O(n²):</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">print_all_possible_ordered_pairs</span>(<span class="params">items</span>):</span><br><span class="line">    <span class="keyword">for</span> first_item <span class="keyword">in</span> items:</span><br><span class="line">        <span class="keyword">for</span> second_item <span class="keyword">in</span> items:</span><br><span class="line">            <span class="built_in">print</span>(first_item, second_item)</span><br></pre></td></tr></table></figure>
+<p><strong>Use diagrams to describe</strong><br><img src="https://i.pinimg.com/originals/e7/27/ad/e727adaf592f43704618febb0c15a9c5.png" alt="alt text" title="Big O Notation"></p>
+<p><strong>Use text to describe</strong></p>
+<table>
+<thead>
+<tr>
+<th>Complexity</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>O(1) Constant time</strong></td>
+<td align="center">in Big O notation where the time taken to run an algorithm does not vary with the input size</td>
+</tr>
+<tr>
+<td><strong>O(logN) Logarithmic time</strong></td>
+<td align="center">in Big O notation where the time taken to run an algorithm increased or decreases in line with a logarithm.</td>
+</tr>
+<tr>
+<td><strong>O(N) Linear time</strong></td>
+<td align="center">in Big O notation where the time taken to run an algorithm increases in direct proportion with the input size.</td>
+</tr>
+<tr>
+<td><strong>O(N²) Polynomial time</strong></td>
+<td align="center">in Big O notation where the time taken to run the algorithm is a polynomial function of the input size, e.g. the square of the input size.</td>
+</tr>
+<tr>
+<td><strong>O(2^N) Expoential time</strong></td>
+<td align="center">in Big O notation where the time taken to run an algorithm increases as an exponential function of the number of inputs. For example, for each additional input the time taken might double.</td>
+</tr>
+</tbody></table>
+<ul>
+<li>An algorithm is said to be <strong>polynomial time</strong> if its running time can be expressed as O(n^k), where n is the input size and k is a constant exponent.</li>
+</ul>
+<h2 id="Deriving-the-complexity-of-an-algorithm"><a href="#Deriving-the-complexity-of-an-algorithm" class="headerlink" title="Deriving the complexity of an algorithm"></a>Deriving the complexity of an algorithm</h2><table>
+<thead>
+<tr>
+<th>Complexity</th>
+<th align="center">Algorithms</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>O(1)</strong></td>
+<td align="center">Indexing an array</td>
+</tr>
+<tr>
+<td><strong>O(logN)</strong></td>
+<td align="center">Binary search</td>
+</tr>
+<tr>
+<td><strong>O(N)</strong></td>
+<td align="center">Linear search of an array</td>
+</tr>
+<tr>
+<td><strong>O(N²)</strong></td>
+<td align="center">Bubble sort<br>Selction sort<br>Insertion sort</td>
+</tr>
+<tr>
+<td><strong>O(2^N)</strong></td>
+<td align="center">Intractable problems</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Most efficient is O(1) or constant time.</li>
+<li>Least efficient is O(2^N) or exponential time.</li>
+</ul>
+<p><strong>Drop the constants</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">print_first_item_then_first_half_then_say_hi_100_times</span>(<span class="params">items</span>):</span><br><span class="line">    <span class="built_in">print</span>(items[<span class="number">0</span>])</span><br><span class="line"></span><br><span class="line">    middle_index = <span class="built_in">len</span>(items) // <span class="number">2</span></span><br><span class="line">    index = <span class="number">0</span></span><br><span class="line">    <span class="keyword">while</span> index &lt; middle_index:</span><br><span class="line">        <span class="built_in">print</span>(items[index])</span><br><span class="line">        index += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> time <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">100</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;hi&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>This is O(1+n&#x2F;2+100), which we just call O(n).</p>
+<p>For big O notation we’re looking at what happens as n gets arbitrarily large. As n gets really big, adding 100 or dividing by 2 has a decreasingly significant effect.</p>
+<p><strong>Drop the less significant terms</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">print_all_numbers_then_all_pair_sums</span>(<span class="params">numbers</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;these are the numbers:&quot;</span>)</span><br><span class="line">    <span class="keyword">for</span> number <span class="keyword">in</span> numbers:</span><br><span class="line">        <span class="built_in">print</span>(number)</span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;and these are their sums:&quot;</span>)</span><br><span class="line">    <span class="keyword">for</span> first_number <span class="keyword">in</span> numbers:</span><br><span class="line">        <span class="keyword">for</span> second_number <span class="keyword">in</span> numbers:</span><br><span class="line">            <span class="built_in">print</span>(first_number + second_number)</span><br></pre></td></tr></table></figure>
+<p>The runtime is O(n+n²), which we just call O(n²). Because the less significant terms quickly become less significant as n gets big.</p>
+<h2 id="Tractable-and-intractable-problems"><a href="#Tractable-and-intractable-problems" class="headerlink" title="Tractable and intractable problems"></a>Tractable and intractable problems</h2><p>In computer science, problems can be classified as either <strong>tractable</strong> or <strong>intractable</strong> based on how efficiently they can be solved by an algorithm.</p>
+<ul>
+<li><strong>Tractable problem:</strong> a problem that can be solved in an acceptable amount of time.</li>
+<li><strong>Intractable problem:</strong> a problem that cannot be solved within an acceptable time frame.</li>
+</ul>
+<p>A problem is said to be tractable if there exists an algorithm that can solve it in a reasonable amount of time, typically polynomial time in terms of the size of the input. These problems are also known as “easy” problems. For example, sorting a list of integers can be solved in O(n log n) time, where n is the number of elements in the list.</p>
+<p>Faced with intractable problems, programmers often produce <strong>heuristic</strong> algorithms such as Greedy algorithms, A* search…</p>
+<p><strong>Heuristic:</strong> with algorithms it is a method for producing a ‘rule of thumb’ to produce an acceptable solution to intractable problems.<br>Because they cannot be solved in a time which is practical with current processing power.</p>
+<h2 id="Unsolvable-problems"><a href="#Unsolvable-problems" class="headerlink" title="Unsolvable problems"></a>Unsolvable problems</h2><p><strong>Unsolvable problems: a problem that it has been proved cannot be solved on a computer.</strong></p>
+<p><strong>Halting problem: an example of an unsolvable problem where it is impossible to write a program that can work out whether another problem will halt given a particular input.</strong> It is impossible to solve the halting problem for all possible programs and inputs, as shown by Alan Turing in 1936 in his proof of the halting problem’s undecidability. <a target="_blank" rel="noopener" href="https://onlinecst.com/2023/04/16/4.3-the-turing-machine/">The Turing machine</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="http://example.com">Gerry Leng</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2023/04/17/4.6-big-o-notation-and-classification-of-algorithms/">http://example.com/2023/04/17/4.6-big-o-notation-and-classification-of-algorithms/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Fundamentals-of-computational-thinking/">Fundamentals of computational thinking</a></div><div class="post_share"><div class="social-share" data-image="https://i.pinimg.com/originals/fb/fe/39/fbfe391f8540e158d904b37adf003616.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/04/20/5.1-number-systems/" title="5.1 Number systems"><img class="cover" src="https://i.pinimg.com/originals/b4/e0/34/b4e0346ad21241a0efce371e88f6ba47.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">5.1 Number systems</div></div></a></div><div class="next-post pull-right"><a href="/2023/04/16/4.5-maths-for-regular-expressions/" title="4.5 Maths for regular expressions"><img class="cover" src="https://i.pinimg.com/originals/6b/e0/a5/6be0a596c125ea556defce459f29010e.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">4.5 Maths for regular expressions</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2023/04/14/4.1-abstraction-and-automation/" title="4.1 Abstraction and automation"><img class="cover" src="https://i.pinimg.com/originals/43/ac/d8/43acd8d3c73545964f60716b1896dd7c.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-14</div><div class="title">4.1 Abstraction and automation</div></div></a></div><div><a href="/2023/04/16/4.2-finite-state-machines/" title="4.2 Finite state machines"><img class="cover" src="https://i.pinimg.com/originals/5d/56/ed/5d56edeb1b7a874e7a433ac77c3452d3.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-16</div><div class="title">4.2 Finite state machines</div></div></a></div><div><a href="/2023/04/16/4.3-the-turing-machine/" title="4.3 The Turing machine"><img class="cover" src="https://i.pinimg.com/originals/31/a0/6d/31a06dacce25cced9555e3239bc3a29c.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-16</div><div class="title">4.3 The Turing machine</div></div></a></div><div><a href="/2023/04/16/4.4-regular-and-context-free-languages/" title="4.4 Regular and Context-free Languages"><img class="cover" src="https://i.pinimg.com/originals/e7/ac/71/e7ac71993c4f353a347739c2a577dc49.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-16</div><div class="title">4.4 Regular and Context-free Languages</div></div></a></div><div><a href="/2023/04/16/4.5-maths-for-regular-expressions/" title="4.5 Maths for regular expressions"><img class="cover" src="https://i.pinimg.com/originals/6b/e0/a5/6be0a596c125ea556defce459f29010e.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-16</div><div class="title">4.5 Maths for regular expressions</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://avatars.githubusercontent.com/u/114028212?v=4" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Gerry Leng</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Functions"><span class="toc-number">1.</span> <span class="toc-text">Functions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Big-o-notation"><span class="toc-number">2.</span> <span class="toc-text">Big o notation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Deriving-the-complexity-of-an-algorithm"><span class="toc-number">3.</span> <span class="toc-text">Deriving the complexity of an algorithm</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Tractable-and-intractable-problems"><span class="toc-number">4.</span> <span class="toc-text">Tractable and intractable problems</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Unsolvable-problems"><span class="toc-number">5.</span> <span class="toc-text">Unsolvable problems</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/05/09/hello-world/" title="Hello World">Hello World</a><time datetime="2023-05-08T23:29:58.915Z" title="Created 2023-05-09 00:29:58">2023-05-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/04/24/5-3-the-binary-number-system/" title="5.3 The binary number system"><img src="https://i.pinimg.com/originals/98/4f/3c/984f3c7ba0cc643910bb65244c14be99.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="5.3 The binary number system"/></a><div class="content"><a class="title" href="/2023/04/24/5-3-the-binary-number-system/" title="5.3 The binary number system">5.3 The binary number system</a><time datetime="2023-04-24T08:47:13.000Z" title="Created 2023-04-24 09:47:13">2023-04-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/04/21/5.2-number-bases/" title="5.2 Number bases"><img src="https://i.pinimg.com/originals/cc/2a/88/cc2a8889407f04807c3a3d2f20994778.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="5.2 Number bases"/></a><div class="content"><a class="title" href="/2023/04/21/5.2-number-bases/" title="5.2 Number bases">5.2 Number bases</a><time datetime="2023-04-21T12:02:54.000Z" title="Created 2023-04-21 13:02:54">2023-04-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/04/20/5.1-number-systems/" title="5.1 Number systems"><img src="https://i.pinimg.com/originals/b4/e0/34/b4e0346ad21241a0efce371e88f6ba47.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="5.1 Number systems"/></a><div class="content"><a class="title" href="/2023/04/20/5.1-number-systems/" title="5.1 Number systems">5.1 Number systems</a><time datetime="2023-04-20T18:18:50.000Z" title="Created 2023-04-20 19:18:50">2023-04-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/04/17/4.6-big-o-notation-and-classification-of-algorithms/" title="4.6 Big o notation and classification of algorithms"><img src="https://i.pinimg.com/originals/fb/fe/39/fbfe391f8540e158d904b37adf003616.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="4.6 Big o notation and classification of algorithms"/></a><div class="content"><a class="title" href="/2023/04/17/4.6-big-o-notation-and-classification-of-algorithms/" title="4.6 Big o notation and classification of algorithms">4.6 Big o notation and classification of algorithms</a><time datetime="2023-04-17T20:17:33.000Z" title="Created 2023-04-17 21:17:33">2023-04-17</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By Gerry Leng</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
