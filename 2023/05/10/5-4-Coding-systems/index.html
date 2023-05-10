@@ -1,0 +1,178 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>5.4 Coding systems | LenxNotes</title><meta name="author" content="Gerry Leng"><meta name="copyright" content="Gerry Leng"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="Coding systems are a set of rules and procedures used to represent and communicate information in a way that can be easily understood by both humans and machines.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="5.4 Coding systems">
+<meta property="og:url" content="http://example.com/2023/05/10/5-4-Coding-systems/index.html">
+<meta property="og:site_name" content="LenxNotes">
+<meta property="og:description" content="Coding systems are a set of rules and procedures used to represent and communicate information in a way that can be easily understood by both humans and machines.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.pinimg.com/originals/cf/f7/70/cff770845adbedc9e34402e6fe2030c2.jpg">
+<meta property="article:published_time" content="2023-05-10T17:53:32.000Z">
+<meta property="article:modified_time" content="2023-05-10T18:58:48.515Z">
+<meta property="article:author" content="Gerry Leng">
+<meta property="article:tag" content="Fundamentals of data representation">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.pinimg.com/originals/cf/f7/70/cff770845adbedc9e34402e6fe2030c2.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2023/05/10/5-4-Coding-systems/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '5.4 Coding systems',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-05-10 19:58:48'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://avatars.githubusercontent.com/u/114028212?v=4" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">1</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> HOME</span></a></div><div class="menus_item"><a class="site-page" href="/diary/"><i class="fa-fw fa-solid fa-book-skull"></i><span> DIARY</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> NOTES</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/maths/"><i class="fa-fw fa-solid fa-key"></i><span> MATHS</span></a></li><li><a class="site-page child" href="/physics/"><i class="fa-fw fa-solid fa-atom"></i><span> PHYSICS</span></a></li><li><a class="site-page child" href="/computing/"><i class="fa-fw fa-solid fa-brain"></i><span> COMPUTING</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/contact/"><i class="fa-fw fa-solid fa-address-book"></i><span> CONTACT</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://i.pinimg.com/originals/cf/f7/70/cff770845adbedc9e34402e6fe2030c2.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="LenxNotes"><img class="site-icon" src="/img/header-logo.png"/><span class="site-name">LenxNotes</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> HOME</span></a></div><div class="menus_item"><a class="site-page" href="/diary/"><i class="fa-fw fa-solid fa-book-skull"></i><span> DIARY</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> NOTES</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/maths/"><i class="fa-fw fa-solid fa-key"></i><span> MATHS</span></a></li><li><a class="site-page child" href="/physics/"><i class="fa-fw fa-solid fa-atom"></i><span> PHYSICS</span></a></li><li><a class="site-page child" href="/computing/"><i class="fa-fw fa-solid fa-brain"></i><span> COMPUTING</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/contact/"><i class="fa-fw fa-solid fa-address-book"></i><span> CONTACT</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">5.4 Coding systems</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-05-10T17:53:32.000Z" title="Created 2023-05-10 18:53:32">2023-05-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-05-10T18:58:48.515Z" title="Updated 2023-05-10 19:58:48">2023-05-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Computer-Science/">Computer Science</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="5.4 Coding systems"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="ASCII-and-Unicode"><a href="#ASCII-and-Unicode" class="headerlink" title="ASCII and Unicode"></a>ASCII and Unicode</h2><p>ASCII is a 7-bit character set containing 128 characters. It contains the numbers from 0-9, the upper and lower case English letters from A to Z, and some special characters. The character sets used in modern computers, in HTML, and on the Internet, are all based on ASCII.</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/ASCII-Table-wide.svg/2560px-ASCII-Table-wide.svg.png" alt="alt text" title="ASCII"></p>
+<p><strong>ASCII</strong> stands for <strong>American Standard Code for Information Interchange</strong>. It is a character encoding standard for electronic communication. ASCII codes represent text in computers, telecommunications equipment, and other devices. Most modern character-encoding schemes are based on ASCII, although they support many additional characters.</p>
+<p><strong>Unicode</strong> is a computing industry standard for the consistent encoding, representation, and handling of text expressed in most of the world’s writing systems. The standard is maintained by the Unicode Consortium, and as of March 2021, there is a total of 143,859 characters, with Unicode 14.0 covering 144 modern and historic scripts, as well as multiple symbol sets and emoji.</p>
+<p><img src="https://miro.medium.com/v2/resize:fit:1400/0*iuLgUkkTZZGhI2Ni.png" alt="alt text" title="Unicode"><br> m<br>ASCII VS Unicode</p>
+<h2 id="Error-checking-and-correction"><a href="#Error-checking-and-correction" class="headerlink" title="Error checking and correction"></a>Error checking and correction</h2><h2 id="Bit-mapped-graphics"><a href="#Bit-mapped-graphics" class="headerlink" title="Bit-mapped graphics"></a>Bit-mapped graphics</h2><h2 id="Analogue-and-digital-siganls"><a href="#Analogue-and-digital-siganls" class="headerlink" title="Analogue and digital siganls"></a>Analogue and digital siganls</h2><p><img src="https://www.google.com/url?sa=i&url=https://instrumentationtools.com/what-are-analog-and-digital-signals-differences-examples/&psig=AOvVaw20BcEPiNJ465H2NqL4BdS_&ust=1683830588048000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJCMhvWz6_4CFQAAAAAdAAAAABAD" alt="alt text" title="Ana vs Dig"></p>
+<p><img src="https://i.pinimg.com/originals/f3/93/21/f39321a67f029a0741c9f0418494f179.png" alt="alt text" title="Measuring analogue signals by Using microphones and oscilloscopes"></p>
+<p>The little expiriment above shows how to measure the speed of sound by using a microphone and an amplifier. A microphone converts sound wave into electrical signals which is known as <strong>analogue to digital conversion (ADC)</strong> in computer science.</p>
+<p><strong>Microphones work by converting the changes in air pressure caused by sound waves into electrical signals.</strong> Specifically, they use a diaphragm, which is a thin, flexible membrane, to detect the changes in air pressure. When sound waves hit the diaphragm, it vibrates back and forth, creating a corresponding electrical signal that the computer can process.</p>
+<p><img src="https://i.pinimg.com/originals/ae/1a/d6/ae1ad625433836fad9a1bc27dadda8e3.gif" alt="alt text" title="mic"></p>
+<p>Another example is MIDI(Musical Instrument Digital Interface) keyboard, like shown below:</p>
+<p><img src="https://cdn.mos.cms.futurecdn.net/4LwDwmtVHMPdEo9bgi2trP.jpg" alt="alt text" title="MIDI devices"></p>
+<p><strong>A MIDI keyboard is a device that can send commands to a MIDI-equipped device. When you press a key or pad, it creates a MIDI message.</strong> for example, the keyboard generates a MIDI note-on message that includes information about which key was pressed, the velocity of the key press, and other control data. When the key is released, the keyboard generates a MIDI note-off message that tells the receiving device to stop playing the note. <strong>The message is sent to the device it’s connected to with the use of either a USB or MIDI cable.</strong></p>
+<h2 id="Sound-sampling-and-synthesis"><a href="#Sound-sampling-and-synthesis" class="headerlink" title="Sound sampling and synthesis"></a>Sound sampling and synthesis</h2><h2 id="Data-compression"><a href="#Data-compression" class="headerlink" title="Data compression"></a>Data compression</h2></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="http://example.com">Gerry Leng</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2023/05/10/5-4-Coding-systems/">http://example.com/2023/05/10/5-4-Coding-systems/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Fundamentals-of-data-representation/">Fundamentals of data representation</a></div><div class="post_share"><div class="social-share" data-image="https://i.pinimg.com/originals/cf/f7/70/cff770845adbedc9e34402e6fe2030c2.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2023/05/09/hello-world/" title="Hello World"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Hello World</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2023/04/24/5-3-the-binary-number-system/" title="5.3 The binary number system"><img class="cover" src="https://i.pinimg.com/originals/98/4f/3c/984f3c7ba0cc643910bb65244c14be99.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-24</div><div class="title">5.3 The binary number system</div></div></a></div><div><a href="/2023/04/21/5.2-number-bases/" title="5.2 Number bases"><img class="cover" src="https://i.pinimg.com/originals/cc/2a/88/cc2a8889407f04807c3a3d2f20994778.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-21</div><div class="title">5.2 Number bases</div></div></a></div><div><a href="/2023/04/20/5.1-number-systems/" title="5.1 Number systems"><img class="cover" src="https://i.pinimg.com/originals/b4/e0/34/b4e0346ad21241a0efce371e88f6ba47.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-20</div><div class="title">5.1 Number systems</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://avatars.githubusercontent.com/u/114028212?v=4" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Gerry Leng</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/gerryleng"><i class="fab fa-github"></i><span>My Projects</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#ASCII-and-Unicode"><span class="toc-number">1.</span> <span class="toc-text">ASCII and Unicode</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Error-checking-and-correction"><span class="toc-number">2.</span> <span class="toc-text">Error checking and correction</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Bit-mapped-graphics"><span class="toc-number">3.</span> <span class="toc-text">Bit-mapped graphics</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Analogue-and-digital-siganls"><span class="toc-number">4.</span> <span class="toc-text">Analogue and digital siganls</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Sound-sampling-and-synthesis"><span class="toc-number">5.</span> <span class="toc-text">Sound sampling and synthesis</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Data-compression"><span class="toc-number">6.</span> <span class="toc-text">Data compression</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/05/10/5-4-Coding-systems/" title="5.4 Coding systems"><img src="https://i.pinimg.com/originals/cf/f7/70/cff770845adbedc9e34402e6fe2030c2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="5.4 Coding systems"/></a><div class="content"><a class="title" href="/2023/05/10/5-4-Coding-systems/" title="5.4 Coding systems">5.4 Coding systems</a><time datetime="2023-05-10T17:53:32.000Z" title="Created 2023-05-10 18:53:32">2023-05-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/05/09/hello-world/" title="Hello World">Hello World</a><time datetime="2023-05-08T23:29:58.915Z" title="Created 2023-05-09 00:29:58">2023-05-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/04/24/5-3-the-binary-number-system/" title="5.3 The binary number system"><img src="https://i.pinimg.com/originals/98/4f/3c/984f3c7ba0cc643910bb65244c14be99.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="5.3 The binary number system"/></a><div class="content"><a class="title" href="/2023/04/24/5-3-the-binary-number-system/" title="5.3 The binary number system">5.3 The binary number system</a><time datetime="2023-04-24T08:47:13.000Z" title="Created 2023-04-24 09:47:13">2023-04-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/04/21/5.2-number-bases/" title="5.2 Number bases"><img src="https://i.pinimg.com/originals/cc/2a/88/cc2a8889407f04807c3a3d2f20994778.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="5.2 Number bases"/></a><div class="content"><a class="title" href="/2023/04/21/5.2-number-bases/" title="5.2 Number bases">5.2 Number bases</a><time datetime="2023-04-21T12:02:54.000Z" title="Created 2023-04-21 13:02:54">2023-04-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/04/20/5.1-number-systems/" title="5.1 Number systems"><img src="https://i.pinimg.com/originals/b4/e0/34/b4e0346ad21241a0efce371e88f6ba47.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="5.1 Number systems"/></a><div class="content"><a class="title" href="/2023/04/20/5.1-number-systems/" title="5.1 Number systems">5.1 Number systems</a><time datetime="2023-04-20T18:18:50.000Z" title="Created 2023-04-20 19:18:50">2023-04-20</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By Gerry Leng</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
