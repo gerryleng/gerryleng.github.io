@@ -3723,7 +3723,11 @@ h1.page-title + .tag-cloud-list {
   text-align: center;
 }
 #pagination .page-number.current {
-  background: #00c4b6;
+  background: -webkit-linear-gradient(top, #3cf 0%, #f9c 100%);
+  background: -moz-linear-gradient(top, #3cf 0%, #f9c 100%);
+  background: -o-linear-gradient(top, #3cf 0%, #f9c 100%);
+  background: -ms-linear-gradient(top, #3cf 0%, #f9c 100%);
+  background: linear-gradient(to bottom, #3cf 0%, #f9c 100%);
   color: var(--white);
 }
 #pagination .pagination-info {
