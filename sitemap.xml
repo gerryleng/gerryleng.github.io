@@ -38,15 +38,6 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/4a2a6a85.html</loc>
-    
-    <lastmod>2023-07-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://gerryleng.com/posts/d46228ab.html</loc>
     
     <lastmod>2023-07-01</lastmod>
@@ -56,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/37a60406.html</loc>
+    <loc>https://gerryleng.com/posts/4a2a6a85.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -74,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/f82835d7.html</loc>
+    <loc>https://gerryleng.com/posts/37a60406.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -83,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/9c426dc8.html</loc>
+    <loc>https://gerryleng.com/posts/f82835d7.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -101,7 +92,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/7c9c9368.html</loc>
+    <loc>https://gerryleng.com/posts/9c426dc8.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -111,6 +102,15 @@
   
   <url>
     <loc>https://gerryleng.com/posts/31a2487e.html</loc>
+    
+    <lastmod>2023-07-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://gerryleng.com/posts/7c9c9368.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -146,7 +146,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/7e1de43b.html</loc>
+    <loc>https://gerryleng.com/posts/c0381754.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -164,7 +164,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/c0381754.html</loc>
+    <loc>https://gerryleng.com/posts/7e1de43b.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -279,7 +279,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/Waves/</loc>
+    <loc>https://gerryleng.com/tags/EM-Radiation-and-Quantum-Phenomena/</loc>
     <lastmod>2023-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -293,7 +293,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/EM-Radiation-and-Quantum-Phenomena/</loc>
+    <loc>https://gerryleng.com/tags/Waves/</loc>
     <lastmod>2023-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
