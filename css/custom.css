@@ -1,5 +1,4 @@
-<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>
-/* 自定义底部  start */
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>/* 自定义底部  start */
 #ft {
     max-width: 1200px;
     margin: 0 auto 12px;
@@ -125,3 +124,11 @@
     }
 }
 /* 自定义底部  End */
+
+#footer{
+    background: transparent;
+}
+
+#footer-wrap{
+    color: #0d0d0d;
+}
