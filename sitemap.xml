@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://gerryleng.com/posts/Disclaimer.html</loc>
+    <loc>https://gerryleng.com/posts/2803c55c.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/2e40ea9e.html</loc>
+    <loc>https://gerryleng.com/posts/a20ca89b.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/a20ca89b.html</loc>
+    <loc>https://gerryleng.com/posts/2e40ea9e.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -74,6 +74,15 @@
   </url>
   
   <url>
+    <loc>https://gerryleng.com/posts/9307a0c2.html</loc>
+    
+    <lastmod>2023-07-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://gerryleng.com/posts/37a60406.html</loc>
     
     <lastmod>2023-07-01</lastmod>
@@ -92,15 +101,6 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/9307a0c2.html</loc>
-    
-    <lastmod>2023-07-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://gerryleng.com/posts/88ad6370.html</loc>
     
     <lastmod>2023-07-01</lastmod>
@@ -110,7 +110,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/7c9c9368.html</loc>
+    <loc>https://gerryleng.com/posts/9c426dc8.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -119,7 +119,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/9c426dc8.html</loc>
+    <loc>https://gerryleng.com/posts/7c9c9368.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -182,7 +182,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/d993665f.html</loc>
+    <loc>https://gerryleng.com/posts/295f5969.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -200,7 +200,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/295f5969.html</loc>
+    <loc>https://gerryleng.com/posts/d993665f.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -337,13 +337,6 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/Writing/</loc>
-    <lastmod>2023-07-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://gerryleng.com/tags/Electricity/</loc>
     <lastmod>2023-07-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -352,6 +345,13 @@
   
   <url>
     <loc>https://gerryleng.com/tags/Further-Mechanics/</loc>
+    <lastmod>2023-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://gerryleng.com/tags/Writing/</loc>
     <lastmod>2023-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
