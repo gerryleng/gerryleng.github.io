@@ -1,0 +1,328 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>5.5 Encryption | Notes - Gerry L.</title><meta name="author" content="Gerry L"><meta name="copyright" content="Gerry L"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="A-Level AQA Computer Science - Fundamentals of data representation">
+<meta property="og:type" content="article">
+<meta property="og:title" content="5.5 Encryption">
+<meta property="og:url" content="https://gerryleng.com/posts/4a2a6a85.html">
+<meta property="og:site_name" content="Notes - Gerry L.">
+<meta property="og:description" content="A-Level AQA Computer Science - Fundamentals of data representation">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.pinimg.com/originals/b8/34/a0/b834a019492cb02dadde16ad4b52fd3a.jpg">
+<meta property="article:published_time" content="2023-05-17T10:43:55.000Z">
+<meta property="article:modified_time" content="2023-06-30T23:50:54.732Z">
+<meta property="article:author" content="Gerry L">
+<meta property="article:tag" content="Fundamentals of data representation">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.pinimg.com/originals/b8/34/a0/b834a019492cb02dadde16ad4b52fd3a.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://gerryleng.com/posts/4a2a6a85.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="G-CLZ1T3L2JE"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: 'ca-pub-9552468300077000',
+  enable_page_level_ads: 'true'
+});</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-574Q6M4HPG"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-574Q6M4HPG');
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: {"appId":"6JY9INXH70","apiKey":"042630c6af0b39bc2617b1074425f61f","indexName":"Blog","hits":{"per_page":6},"languages":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}.","hits_stats":"${hits} results found in ${time} ms"}},
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"Author: Gerry L","link":"Link: ","source":"Source: Notes - Gerry L.","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source."}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '5.5 Encryption',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-07-01 00:50:54'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://avatars.githubusercontent.com/u/114028212?v=4" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">23</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> HOME</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> NOTES</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/physics/"><i class="fa-fw fa-solid fa-atom"></i><span> PHYSICS</span></a></li><li><a class="site-page child" href="/computing/"><i class="fa-fw fa-solid fa-brain"></i><span> COMPUTING</span></a></li><li><a class="site-page child" href="/ielts/"><i class="fa-fw fa-solid fa-poop"></i><span> IELTS</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa-solid fa-book-skull"></i><span> PROJECTS</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img fixed" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Notes - Gerry L."><img class="site-icon" src="/img/header-logo.png"/><span class="site-name">Notes - Gerry L.</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> HOME</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> NOTES</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/physics/"><i class="fa-fw fa-solid fa-atom"></i><span> PHYSICS</span></a></li><li><a class="site-page child" href="/computing/"><i class="fa-fw fa-solid fa-brain"></i><span> COMPUTING</span></a></li><li><a class="site-page child" href="/ielts/"><i class="fa-fw fa-solid fa-poop"></i><span> IELTS</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa-solid fa-book-skull"></i><span> PROJECTS</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">5.5 Encryption<a class="post-edit-link" href="https://github.com/gerryleng/gerryleng.github.io/pulls_posts/5-5-Encryption.md" title="Edited on" target="_blank"><i class="fas fa-pencil-alt"></i></a></h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-05-17T10:43:55.000Z" title="Created 2023-05-17 11:43:55">2023-05-17</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-06-30T23:50:54.732Z" title="Updated 2023-07-01 00:50:54">2023-07-01</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Computer-Science/">Computer Science</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="5.5 Encryption"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><h2 id="Encryption-basics"><a href="#Encryption-basics" class="headerlink" title="Encryption basics"></a>Encryption basics</h2><p><strong>What is encryption and why is it used?</strong></p>
+<div class="hide-block"><button type="button" class="hide-button" style="">Answer
+    </button><div class="hide-content"><p>Encryption scrambles data so that it cannot be understood by anyone that intercepts it unless they know the key that was used to scramble it.</p>
+</div></div>
+
+<p><strong>Encryption:</strong> The process of turning plaintext into ciphertext.<br><strong>Decryption:</strong> The process of turning ciphertext into plaintext.</p>
+<p><strong>Applications of encryption</strong></p>
+<p><img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Applications-What_Is_Cryptography.PNG" alt="alt text" title="Applications of encryption"></p>
+<p><strong>All encryption works on the basis of turning plaintext into ciphertext</strong></p>
+<ul>
+<li><strong>Plaintext:</strong> data that is readable and understandable.</li>
+<li><strong>Ciphertext:</strong> data has been encrypted.</li>
+</ul>
+<p><img src="https://library.ahima.org/~/media/bokImages/1/Chunk%205/104088.ashx?la=en" alt="alt text" title="Encryption basics"></p>
+<p><strong>Caesar cipher</strong>, <strong>Vernam cipher</strong> and <strong>transposition ciphers</strong> are three common techiniques for encrypting. Here are their introductions:</p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th align="center">Introduction</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Caesar cipher</td>
+<td align="center">a <strong>substitution cipher</strong> where one character of plaintext is substituted for another, which becomes the ciphertext.</td>
+</tr>
+<tr>
+<td>Vernam cipher</td>
+<td align="center">a method of encryption that uses a one-time pad(<strong>key</strong>)</td>
+</tr>
+<tr>
+<td>Transposition cipher</td>
+<td align="center">a method of encryption where the characters are rearranged to form an anagram.</td>
+</tr>
+</tbody></table>
+<p><strong>Key:</strong> in cryptography it is the data that is used to encrypt and decrypt the data.<br><strong>Substitution cipher:</strong> a method of encryption where one character is substituted another to create ciphertext.</p>
+<h2 id="The-Caesar-cipher"><a href="#The-Caesar-cipher" class="headerlink" title="The Caesar cipher"></a>The Caesar cipher</h2><p><img src="https://higherlogicdownload.s3.amazonaws.com/IMWUC/UploadedImages/92757287-d116-4157-b004-c2a0aba1b048/Caesar_cipher.png" alt="alt text" title="The Caesar cipher"></p>
+<p>The <strong>Caesar cipher</strong> is a <strong>substitution cipher</strong> that shifts characters in the plaintext by a certain number of positions in the alphabet. For example, if the shift is 3, then the letter A would be encoded as D, the letter B encoded as E, and so on.</p>
+<p><strong>Substitution cipher:</strong> A substitution cipher is a method of encryption where each letter in the plaintext is replaced by a letter from the ciphertext.</p>
+<h3 id="Encryption"><a href="#Encryption" class="headerlink" title="Encryption"></a>Encryption</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">caesar_encrypt</span>(<span class="params">plain_text, shift_num</span>):</span><br><span class="line">    cipher_text = <span class="string">&quot;&quot;</span></span><br><span class="line">    <span class="keyword">for</span> char <span class="keyword">in</span> plain_text:</span><br><span class="line">        <span class="keyword">if</span> char.isalpha():</span><br><span class="line">            char_code = <span class="built_in">ord</span>(char) + shift_num</span><br><span class="line">            <span class="keyword">if</span> char.isupper():</span><br><span class="line">                <span class="keyword">if</span> char_code &gt; <span class="built_in">ord</span>(<span class="string">&#x27;Z&#x27;</span>):</span><br><span class="line">                    char_code = <span class="built_in">ord</span>(<span class="string">&#x27;A&#x27;</span>) + (char_code - <span class="built_in">ord</span>(<span class="string">&#x27;Z&#x27;</span>) - <span class="number">1</span>)</span><br><span class="line">                cipher_text += <span class="built_in">chr</span>(char_code)</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">if</span> char_code &gt; <span class="built_in">ord</span>(<span class="string">&#x27;z&#x27;</span>):</span><br><span class="line">                    char_code = <span class="built_in">ord</span>(<span class="string">&#x27;a&#x27;</span>) + (char_code - <span class="built_in">ord</span>(<span class="string">&#x27;z&#x27;</span>) - <span class="number">1</span>)</span><br><span class="line">                cipher_text += <span class="built_in">chr</span>(char_code)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            cipher_text += char</span><br><span class="line">    <span class="keyword">return</span> cipher_text</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="Decryption"><a href="#Decryption" class="headerlink" title="Decryption"></a>Decryption</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">caesar_decrypt</span>(<span class="params">cipher_text, shift_num</span>):</span><br><span class="line">    plain_text = <span class="string">&quot;&quot;</span></span><br><span class="line">    <span class="keyword">for</span> char <span class="keyword">in</span> cipher_text:</span><br><span class="line">        <span class="keyword">if</span> char.isalpha():</span><br><span class="line">            char_code = <span class="built_in">ord</span>(char) - shift_num</span><br><span class="line">            <span class="keyword">if</span> char.isupper():</span><br><span class="line">                <span class="keyword">if</span> char_code &lt; <span class="built_in">ord</span>(<span class="string">&#x27;A&#x27;</span>):</span><br><span class="line">                    char_code = <span class="built_in">ord</span>(<span class="string">&#x27;Z&#x27;</span>) - (<span class="built_in">ord</span>(<span class="string">&#x27;A&#x27;</span>) - char_code - <span class="number">1</span>)</span><br><span class="line">                plain_text += <span class="built_in">chr</span>(char_code)</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">if</span> char_code &lt; <span class="built_in">ord</span>(<span class="string">&#x27;a&#x27;</span>):</span><br><span class="line">                    char_code = <span class="built_in">ord</span>(<span class="string">&#x27;z&#x27;</span>) - (<span class="built_in">ord</span>(<span class="string">&#x27;a&#x27;</span>) - char_code - <span class="number">1</span>)</span><br><span class="line">                plain_text += <span class="built_in">chr</span>(char_code)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            plain_text += char</span><br><span class="line">    <span class="keyword">return</span> plain_text</span><br></pre></td></tr></table></figure>
+
+<h3 id="Brute-force-attack"><a href="#Brute-force-attack" class="headerlink" title="Brute force attack"></a>Brute force attack</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">caesar_brute_force</span>(<span class="params">cipher_text</span>):</span><br><span class="line">    <span class="keyword">for</span> shift <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">26</span>):</span><br><span class="line">        plain_text = <span class="string">&quot;&quot;</span></span><br><span class="line">        <span class="keyword">for</span> char <span class="keyword">in</span> cipher_text:</span><br><span class="line">            <span class="keyword">if</span> char.isalpha():</span><br><span class="line">                char_code = <span class="built_in">ord</span>(char) - shift</span><br><span class="line">                <span class="keyword">if</span> char.isupper():</span><br><span class="line">                    <span class="keyword">if</span> char_code &lt; <span class="built_in">ord</span>(<span class="string">&#x27;A&#x27;</span>):</span><br><span class="line">                        char_code = <span class="built_in">ord</span>(<span class="string">&#x27;Z&#x27;</span>) - (<span class="built_in">ord</span>(<span class="string">&#x27;A&#x27;</span>) - char_code - <span class="number">1</span>)</span><br><span class="line">                    plain_text += <span class="built_in">chr</span>(char_code)</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    <span class="keyword">if</span> char_code &lt; <span class="built_in">ord</span>(<span class="string">&#x27;a&#x27;</span>):</span><br><span class="line">                        char_code = <span class="built_in">ord</span>(<span class="string">&#x27;z&#x27;</span>) - (<span class="built_in">ord</span>(<span class="string">&#x27;a&#x27;</span>) - char_code - <span class="number">1</span>)</span><br><span class="line">                    plain_text += <span class="built_in">chr</span>(char_code)</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                plain_text += char</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Shift: &quot;</span> + <span class="built_in">str</span>(shift) + <span class="string">&quot; Text: &quot;</span> + plain_text)</span><br></pre></td></tr></table></figure>
+
+<h2 id="Transposition-ciphers"><a href="#Transposition-ciphers" class="headerlink" title="Transposition ciphers"></a>Transposition ciphers</h2><p><img src="https://i.ytimg.com/vi/bcyUJK1BvHw/maxresdefault.jpg" alt="alt text" title="Transposition ciphers"></p>
+<p>A transposition cipher is a method of encryption where the letters of the plaintext are rearranged in a different order. For example, the letters of the word “hello” could be rearranged to form the word “olleh”. The letters of the word “hello” could also be rearranged to form the word “leloh”.</p>
+<h3 id="Rail-fence-cipher"><a href="#Rail-fence-cipher" class="headerlink" title="Rail fence cipher"></a>Rail fence cipher</h3><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Rail_Fence_Cipher.svg/1200px-Rail_Fence_Cipher.svg.png" alt="alt text" title="Rail fence cipher"></p>
+<p>The rail fence cipher is a transposition cipher that uses a key to encrypt and decrypt a message. The key is used to determine the number of rows in the rail fence. The plaintext is then written in a zigzag pattern across the rows of the rail fence. The ciphertext is then read off in a zigzag pattern across the rows of the rail fence.</p>
+<h3 id="Route-cipher"><a href="#Route-cipher" class="headerlink" title="Route cipher"></a>Route cipher</h3><p>a type of transposition cipher that encodes the message by placing it into a grid.</p>
+<h3 id="Encryption-1"><a href="#Encryption-1" class="headerlink" title="Encryption"></a>Encryption</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">rail_fence_encrypt</span>(<span class="params">plain_text, key</span>):</span><br><span class="line">    cipher_text = <span class="string">&quot;&quot;</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(key):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(i, <span class="built_in">len</span>(plain_text), key):</span><br><span class="line">            cipher_text += plain_text[j]</span><br><span class="line">    <span class="keyword">return</span> cipher_text</span><br></pre></td></tr></table></figure>
+
+<h3 id="Decryption-1"><a href="#Decryption-1" class="headerlink" title="Decryption"></a>Decryption</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">rail_fence_decrypt</span>(<span class="params">cipher_text, key</span>):</span><br><span class="line">    plain_text = <span class="string">&quot;&quot;</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(key):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(i, <span class="built_in">len</span>(cipher_text), key):</span><br><span class="line">            plain_text += cipher_text[j]</span><br><span class="line">    <span class="keyword">return</span> plain_text</span><br></pre></td></tr></table></figure>
+
+<h2 id="Frequency-analysis"><a href="#Frequency-analysis" class="headerlink" title="Frequency analysis"></a>Frequency analysis</h2><p><img src="https://www.st-andrews.ac.uk/~wjh/dataview/images/sonogram3D.gif" alt="alt text" title="Frequency analysis"></p>
+<p><strong>Frequency analysis in cryptography it is the study of how often different letters or phrases are used.</strong> It is a technique used to break a substitution cipher. It is based on the fact that certain letters appear with different frequencies in the English language. For example, the letter E appears more frequently than the letter Z. This means that if we have a ciphertext that has been encrypted using a substitution cipher, we can use frequency analysis to determine which letters have been substituted for which letters.</p>
+<h3 id="Frequency-analysis-1"><a href="#Frequency-analysis-1" class="headerlink" title="Frequency analysis"></a>Frequency analysis</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">frequency_analysis</span>(<span class="params">cipher_text</span>):</span><br><span class="line">    letter_frequency = &#123;&#125;</span><br><span class="line">    <span class="keyword">for</span> char <span class="keyword">in</span> cipher_text:</span><br><span class="line">        <span class="keyword">if</span> char <span class="keyword">in</span> letter_frequency:</span><br><span class="line">            letter_frequency[char] += <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            letter_frequency[char] = <span class="number">1</span></span><br><span class="line">    letter_frequency = <span class="built_in">dict</span>(<span class="built_in">sorted</span>(letter_frequency.items(), key=<span class="keyword">lambda</span> item: item[<span class="number">1</span>], reverse=<span class="literal">True</span>))</span><br><span class="line">    <span class="keyword">return</span> letter_frequency</span><br></pre></td></tr></table></figure>
+
+<h2 id="Vernam-cipher"><a href="#Vernam-cipher" class="headerlink" title="Vernam cipher"></a>Vernam cipher</h2><p><img src="https://www.cryptomuseum.com/crypto/svg/xor1.svg" alt="alt text" title="Vernam cipher"></p>
+<p>The Vernam cipher is a type of encryption that uses a key to encrypt and decrypt a message. The key is a random sequence of letters that is the same length as the message. The key is used to determine which letters in the message are encrypted and which letters are not encrypted. The key is also used to determine which letters in the message are decrypted and which letters are not decrypted. The Vernam cioher is an example of a class of encryption techniques known as <strong>one-time pad techniques.</strong></p>
+<ul>
+<li><strong>One-time pad:</strong> a key that is only used once to encrypt and decrypt a message and is then discarded.</li>
+</ul>
+<p>In theory as long as the pad (or key) is completely random, kept secret and only used once, then it is mathematically impossible to crack the code.</p>
+<h3 id="Encryption-2"><a href="#Encryption-2" class="headerlink" title="Encryption"></a>Encryption</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">vernam_encrypt</span>(<span class="params">plain_text, key</span>):</span><br><span class="line">    cipher_text = <span class="string">&quot;&quot;</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(plain_text)):</span><br><span class="line">        char_code = <span class="built_in">ord</span>(plain_text[i]) ^ <span class="built_in">ord</span>(key[i])</span><br><span class="line">        cipher_text += <span class="built_in">chr</span>(char_code)</span><br><span class="line">    <span class="keyword">return</span> cipher_text</span><br></pre></td></tr></table></figure>
+
+<h3 id="Decryption-2"><a href="#Decryption-2" class="headerlink" title="Decryption"></a>Decryption</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">vernam_decrypt</span>(<span class="params">cipher_text, key</span>):</span><br><span class="line">    plain_text = <span class="string">&quot;&quot;</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(cipher_text)):</span><br><span class="line">        char_code = <span class="built_in">ord</span>(cipher_text[i]) ^ <span class="built_in">ord</span>(key[i])</span><br><span class="line">        plain_text += <span class="built_in">chr</span>(char_code)</span><br><span class="line">    <span class="keyword">return</span> plain_text</span><br></pre></td></tr></table></figure>
+
+<h2 id="Computational-security"><a href="#Computational-security" class="headerlink" title="Computational security"></a>Computational security</h2><p><img src="https://i0.wp.com/thevpn.guru/wp-content/uploads/2018/09/Dictionary-Attack-Everything-You-Need-To-Know--e1537948896292.jpg?fit=650,390&ssl=1" alt="alt text" title="Computational security"></p>
+<p><strong>computational security</strong> recognises the fact that although most encryption can theoretically be cracked, in practice it will be secure enough to withstand most threats.</p>
+<p>**The Vernam or one-time pad cipher is the only cipher that is considered to be 100% mathematically secure.**This is because the pad is only used once and then destroyed. This means that code breakers will only ever have one piece of ciphertext to decipher and the key, which was generated randomly, will be generated again for the next piece of plaintext.</p>
+<ul>
+<li><strong>Computational security:</strong> a concept of how secure data encryption is.</li>
+<li><strong>Computational hardness:</strong> the degree of difficulty in cracking a cipher.</li>
+</ul>
+<p><strong>How are most codes cracked?</strong></p>
+<ul>
+<li>Frequency analysis </li>
+<li>human error (where people do not stick to the system accidentally leave useful information accessible)</li>
+<li>brute-force attacks.</li>
+<li>Reverse engineering (where the code is broken by looking at the code itself)</li>
+<li>Social engineering (where the code is broken by manipulating people into revealing it)</li>
+<li>Dictionary attacks (where the code is broken by trying common words and phrases)</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="https://gerryleng.com">Gerry L</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://gerryleng.com/posts/4a2a6a85.html">https://gerryleng.com/posts/4a2a6a85.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Fundamentals-of-data-representation/">Fundamentals of data representation</a></div><div class="post_share"><div class="social-share" data-image="https://i.pinimg.com/originals/b8/34/a0/b834a019492cb02dadde16ad4b52fd3a.jpg" data-sites="facebook,twitter,wechat"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/a2563d75.html" title="6.1 Hardware and software"><img class="cover" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Difference_Between_Hardware_and_Software.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">6.1 Hardware and software</div></div></a></div><div class="next-post pull-right"><a href="/posts/31a2487e.html" title="6. Electricity"><img class="cover" src="https://i.pinimg.com/originals/3a/8b/26/3a8b26b405a675eea36c12ca6f72fd73.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">6. Electricity</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/posts/d46228ab.html" title="5.4 Coding systems"><img class="cover" src="https://i.pinimg.com/originals/cf/f7/70/cff770845adbedc9e34402e6fe2030c2.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-05-10</div><div class="title">5.4 Coding systems</div></div></a></div><div><a href="/posts/37a60406.html" title="5.1 Number systems"><img class="cover" src="https://i.pinimg.com/originals/b4/e0/34/b4e0346ad21241a0efce371e88f6ba47.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-20</div><div class="title">5.1 Number systems</div></div></a></div><div><a href="/posts/50b8a7f0.html" title="5.3 The binary number system"><img class="cover" src="https://i.pinimg.com/originals/98/4f/3c/984f3c7ba0cc643910bb65244c14be99.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-24</div><div class="title">5.3 The binary number system</div></div></a></div><div><a href="/posts/f82835d7.html" title="5.2 Number bases"><img class="cover" src="https://i.pinimg.com/originals/cc/2a/88/cc2a8889407f04807c3a3d2f20994778.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-21</div><div class="title">5.2 Number bases</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://avatars.githubusercontent.com/u/114028212?v=4" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Gerry L</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">23</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://bmc.link/starlenx"><i class="fa-solid fa-mug-saucer"></i><span>Buy me a coffee</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/starlenx" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="https://www.youtube.com/@starlenx" target="_blank" title="Youtube"><i class="fab fa-youtube" style="color: #ff0000;"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Encryption-basics"><span class="toc-number">1.</span> <span class="toc-text">Encryption basics</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#The-Caesar-cipher"><span class="toc-number">2.</span> <span class="toc-text">The Caesar cipher</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Encryption"><span class="toc-number">2.1.</span> <span class="toc-text">Encryption</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Decryption"><span class="toc-number">2.2.</span> <span class="toc-text">Decryption</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Brute-force-attack"><span class="toc-number">2.3.</span> <span class="toc-text">Brute force attack</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Transposition-ciphers"><span class="toc-number">3.</span> <span class="toc-text">Transposition ciphers</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Rail-fence-cipher"><span class="toc-number">3.1.</span> <span class="toc-text">Rail fence cipher</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Route-cipher"><span class="toc-number">3.2.</span> <span class="toc-text">Route cipher</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Encryption-1"><span class="toc-number">3.3.</span> <span class="toc-text">Encryption</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Decryption-1"><span class="toc-number">3.4.</span> <span class="toc-text">Decryption</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Frequency-analysis"><span class="toc-number">4.</span> <span class="toc-text">Frequency analysis</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Frequency-analysis-1"><span class="toc-number">4.1.</span> <span class="toc-text">Frequency analysis</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vernam-cipher"><span class="toc-number">5.</span> <span class="toc-text">Vernam cipher</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Encryption-2"><span class="toc-number">5.1.</span> <span class="toc-text">Encryption</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Decryption-2"><span class="toc-number">5.2.</span> <span class="toc-text">Decryption</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Computational-security"><span class="toc-number">6.</span> <span class="toc-text">Computational security</span></a></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By Gerry L</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>function loadDisqus () {
+  const disqus_config = function () {
+    this.page.url = 'https://gerryleng.com/posts/4a2a6a85.html'
+    this.page.identifier = '/posts/4a2a6a85.html'
+    this.page.title = '5.5 Encryption'
+  }
+
+  const disqusReset = () => {
+    DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  btf.addModeChange('disqus', disqusReset)
+
+  if (window.DISQUS) disqusReset()
+  else {
+    (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://https-gerryleng-com.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  }
+}
+
+if ('Disqus' === 'Disqus' || !false) {
+  if (false) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+  else loadDisqus()
+} else {
+  function loadOtherComment () {
+    loadDisqus()
+  }
+}
+</script></div><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="true"></script><script>(function(d, w, c) {
+    w.ChatraID = 'QzXsA9muWzSeY3Fut';
+    var s = d.createElement('script');
+    w[c] = w[c] || function() {
+        (w[c].q = w[c].q || []).push(arguments);
+    };
+    s.async = true;
+    s.src = 'https://call.chatra.io/chatra.js';
+    if (d.head) d.head.appendChild(s);
+})(document, window, 'Chatra');
+
+if (false) {
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      Chatra('openChat')
+    });
+  }
+  chatBtnFn()
+} else {
+  if (false) {
+    function chatBtnHide () {
+      Chatra('hide')
+    }
+    function chatBtnShow () {
+      Chatra('show')
+    }
+  }
+}</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/algoliasearch/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instantsearch.js/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script></div></div><!-- hexo injector body_end start --><script data-pjax>function electric_clock_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img id="card-clock-loading" src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading" class="entered loading"></div></div></div></div></div>';
+                console.log('已挂载electric_clock')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='all'|| 'all' ==='all')){
+
+            electric_clock_injector_config()
+        } </script><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script data-pjax  src="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.js"></script><!-- hexo injector body_end end --></body></html>
