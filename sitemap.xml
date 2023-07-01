@@ -83,15 +83,6 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/4a2a6a85.html</loc>
-    
-    <lastmod>2023-07-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://gerryleng.com/posts/50b8a7f0.html</loc>
     
     <lastmod>2023-07-01</lastmod>
@@ -119,16 +110,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/d46228ab.html</loc>
-    
-    <lastmod>2023-07-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://gerryleng.com/posts/88ad6370.html</loc>
+    <loc>https://gerryleng.com/posts/9307a0c2.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -146,16 +128,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/9307a0c2.html</loc>
-    
-    <lastmod>2023-07-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://gerryleng.com/posts/7c9c9368.html</loc>
+    <loc>https://gerryleng.com/posts/88ad6370.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -173,7 +146,34 @@
   </url>
   
   <url>
+    <loc>https://gerryleng.com/posts/7c9c9368.html</loc>
+    
+    <lastmod>2023-07-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://gerryleng.com/posts/4a2a6a85.html</loc>
+    
+    <lastmod>2023-07-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://gerryleng.com/posts/a2563d75.html</loc>
+    
+    <lastmod>2023-07-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://gerryleng.com/posts/d46228ab.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -350,14 +350,14 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/Fundamentals-of-computer-systems/</loc>
+    <loc>https://gerryleng.com/tags/Materials/</loc>
     <lastmod>2023-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/Materials/</loc>
+    <loc>https://gerryleng.com/tags/Fundamentals-of-computer-systems/</loc>
     <lastmod>2023-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
