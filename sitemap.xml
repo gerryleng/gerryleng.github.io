@@ -65,15 +65,6 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/d84f53f6.html</loc>
-    
-    <lastmod>2023-07-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://gerryleng.com/posts/50b8a7f0.html</loc>
     
     <lastmod>2023-07-01</lastmod>
@@ -83,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/d46228ab.html</loc>
+    <loc>https://gerryleng.com/posts/d84f53f6.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -110,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/37a60406.html</loc>
+    <loc>https://gerryleng.com/posts/d46228ab.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -128,7 +119,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/88ad6370.html</loc>
+    <loc>https://gerryleng.com/posts/37a60406.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -137,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/7c9c9368.html</loc>
+    <loc>https://gerryleng.com/posts/88ad6370.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -155,7 +146,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/a2563d75.html</loc>
+    <loc>https://gerryleng.com/posts/7c9c9368.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -173,7 +164,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/24a84346.html</loc>
+    <loc>https://gerryleng.com/posts/a2563d75.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -182,7 +173,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/c0381754.html</loc>
+    <loc>https://gerryleng.com/posts/24a84346.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -200,7 +191,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/7e1de43b.html</loc>
+    <loc>https://gerryleng.com/posts/c0381754.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -209,7 +200,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/295f5969.html</loc>
+    <loc>https://gerryleng.com/posts/7e1de43b.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -227,6 +218,15 @@
   </url>
   
   <url>
+    <loc>https://gerryleng.com/posts/295f5969.html</loc>
+    
+    <lastmod>2023-07-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://gerryleng.com/posts/d993665f.html</loc>
     
     <lastmod>2023-07-01</lastmod>
@@ -236,7 +236,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/dff918de.html</loc>
+    <loc>https://gerryleng.com/posts/d129481b.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -245,7 +245,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/d129481b.html</loc>
+    <loc>https://gerryleng.com/posts/dff918de.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -308,14 +308,14 @@
 
   
   <url>
-    <loc>https://gerryleng.com/tags/EM-Radiation-and-Quantum-Phenomena/</loc>
+    <loc>https://gerryleng.com/tags/Particles-and-Radiation/</loc>
     <lastmod>2023-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/Particles-and-Radiation/</loc>
+    <loc>https://gerryleng.com/tags/EM-Radiation-and-Quantum-Phenomena/</loc>
     <lastmod>2023-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -329,14 +329,14 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/Fundamentals-of-computational-thinking/</loc>
+    <loc>https://gerryleng.com/tags/Mechanics/</loc>
     <lastmod>2023-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/Mechanics/</loc>
+    <loc>https://gerryleng.com/tags/Fundamentals-of-computational-thinking/</loc>
     <lastmod>2023-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
