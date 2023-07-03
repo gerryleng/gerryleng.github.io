@@ -1,7 +1,7 @@
 <link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>/* 自定义底部  start */
 #ft {
     max-width: 1200px;
-    margin: 0 auto 12px;
+    margin: 0 auto 8px;
     display: flex;
     color: rgba(255, 255, 255, 0.8) !important;
     text-align: left;
