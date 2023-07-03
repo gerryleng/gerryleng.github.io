@@ -128,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/50b8a7f0.html</loc>
+    <loc>https://gerryleng.com/posts/d84f53f6.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -137,7 +137,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/d84f53f6.html</loc>
+    <loc>https://gerryleng.com/posts/50b8a7f0.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -164,15 +164,6 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/f82835d7.html</loc>
-    
-    <lastmod>2023-07-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://gerryleng.com/posts/37a60406.html</loc>
     
     <lastmod>2023-07-01</lastmod>
@@ -182,7 +173,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/7c9c9368.html</loc>
+    <loc>https://gerryleng.com/posts/f82835d7.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -201,6 +192,15 @@
   
   <url>
     <loc>https://gerryleng.com/posts/88ad6370.html</loc>
+    
+    <lastmod>2023-07-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://gerryleng.com/posts/7c9c9368.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -364,6 +364,13 @@
   </url>
   
   <url>
+    <loc>https://gerryleng.com/tags/Electricity/</loc>
+    <lastmod>2023-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://gerryleng.com/tags/Further-Mechanics/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -372,13 +379,6 @@
   
   <url>
     <loc>https://gerryleng.com/tags/English-Grammar/</loc>
-    <lastmod>2023-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://gerryleng.com/tags/Electricity/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
