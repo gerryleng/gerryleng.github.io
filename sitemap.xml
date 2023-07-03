@@ -146,7 +146,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/d46228ab.html</loc>
+    <loc>https://gerryleng.com/posts/4a2a6a85.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -155,7 +155,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/4a2a6a85.html</loc>
+    <loc>https://gerryleng.com/posts/d46228ab.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -173,15 +173,6 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/88ad6370.html</loc>
-    
-    <lastmod>2023-07-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://gerryleng.com/posts/f82835d7.html</loc>
     
     <lastmod>2023-07-01</lastmod>
@@ -191,7 +182,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/posts/9c426dc8.html</loc>
+    <loc>https://gerryleng.com/posts/88ad6370.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -210,6 +201,15 @@
   
   <url>
     <loc>https://gerryleng.com/posts/a2563d75.html</loc>
+    
+    <lastmod>2023-07-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://gerryleng.com/posts/9c426dc8.html</loc>
     
     <lastmod>2023-07-01</lastmod>
     
@@ -308,13 +308,6 @@
 
   
   <url>
-    <loc>https://gerryleng.com/tags/Particles-and-Radiation/</loc>
-    <lastmod>2023-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://gerryleng.com/tags/EM-Radiation-and-Quantum-Phenomena/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -322,14 +315,14 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/Waves/</loc>
+    <loc>https://gerryleng.com/tags/Particles-and-Radiation/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/Mechanics/</loc>
+    <loc>https://gerryleng.com/tags/Waves/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -351,6 +344,13 @@
   
   <url>
     <loc>https://gerryleng.com/tags/Materials/</loc>
+    <lastmod>2023-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://gerryleng.com/tags/Mechanics/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
