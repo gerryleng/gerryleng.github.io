@@ -1338,8 +1338,8 @@ canvas:not(#ribbon-canvas),
   --global-font-size: 14px;
   --global-bg: #fff;
   --font-color: #4c4948;
-  --hr-border: #a4d8fa;
-  --hr-before-color: #80c8f8;
+  --hr-border: #d2ebfd;
+  --hr-before-color: #bfe4fb;
   --search-bg: #f6f8fa;
   --search-input-color: #4c4948;
   --search-a-color: #4c4948;
@@ -1368,7 +1368,7 @@ canvas:not(#ribbon-canvas),
   --card-hover-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.09);
   --pseudo-hover: #ff7242;
   --headline-presudo: #a0a0a0;
-  --scrollbar-color: #49b1f5;
+  --scrollbar-color: linear-gradient(to bottom, #3cf 0%, #f9c 100%);
   --default-bg-color: #49b1f5;
 }
 body {
@@ -3823,7 +3823,11 @@ h1.page-title + .tag-cloud-list {
   text-align: center;
 }
 #pagination .page-number.current {
-  background: #00c4b6;
+  background: -webkit-linear-gradient(top, #3cf 0%, #f9c 100%);
+  background: -moz-linear-gradient(top, #3cf 0%, #f9c 100%);
+  background: -o-linear-gradient(top, #3cf 0%, #f9c 100%);
+  background: -ms-linear-gradient(top, #3cf 0%, #f9c 100%);
+  background: linear-gradient(to bottom, #3cf 0%, #f9c 100%);
   color: var(--white);
 }
 #pagination .pagination-info {
@@ -3902,7 +3906,7 @@ h1.page-title + .tag-cloud-list {
   overflow-wrap: break-word;
 }
 #article-container a {
-  color: #49b1f5;
+  color: #99a9bf;
 }
 #article-container a:hover {
   text-decoration: underline;
@@ -5880,7 +5884,11 @@ blockquote.pullquote.right {
   line-height: 24px;
 }
 #algolia-search .search-dialog .ais-Pagination .ais-Pagination-item--selected a {
-  background: #00c4b6;
+  background: -webkit-linear-gradient(top, #3cf 0%, #f9c 100%);
+  background: -moz-linear-gradient(top, #3cf 0%, #f9c 100%);
+  background: -o-linear-gradient(top, #3cf 0%, #f9c 100%);
+  background: -ms-linear-gradient(top, #3cf 0%, #f9c 100%);
+  background: linear-gradient(to bottom, #3cf 0%, #f9c 100%);
   color: #eee;
   cursor: default;
 }
