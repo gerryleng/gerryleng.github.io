@@ -1352,7 +1352,7 @@ canvas:not(#ribbon-canvas),
   --tab-button-active-bg: #fff;
   --card-bg: #fff;
   --sidebar-bg: #f6f8fa;
-  --btn-hover-color: #ff7242;
+  --btn-hover-color: #000;
   --btn-color: #fff;
   --btn-bg: #49b1f5;
   --text-bg-hover: rgba(73,177,245,0.7);
@@ -1366,9 +1366,9 @@ canvas:not(#ribbon-canvas),
   --toc-link-color: #666261;
   --card-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.05);
   --card-hover-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.09);
-  --pseudo-hover: #ff7242;
+  --pseudo-hover: #000;
   --headline-presudo: #a0a0a0;
-  --scrollbar-color: linear-gradient(to bottom, #3cf 0%, #f9c 100%);
+  --scrollbar-color: #000;
   --default-bg-color: #49b1f5;
 }
 body {
@@ -3830,11 +3830,7 @@ h1.page-title + .tag-cloud-list {
   text-align: center;
 }
 #pagination .page-number.current {
-  background: -webkit-linear-gradient(top, #3cf 0%, #f9c 100%);
-  background: -moz-linear-gradient(top, #3cf 0%, #f9c 100%);
-  background: -o-linear-gradient(top, #3cf 0%, #f9c 100%);
-  background: -ms-linear-gradient(top, #3cf 0%, #f9c 100%);
-  background: linear-gradient(to bottom, #3cf 0%, #f9c 100%);
+  background: #000;
   color: var(--white);
 }
 #pagination .pagination-info {
@@ -4395,7 +4391,7 @@ h1.page-title + .tag-cloud-list {
 #waline-wrap {
   --waline-font-size: 1.1em;
   --waline-theme-color: #49b1f5;
-  --waline-active-color: #ff7242;
+  --waline-active-color: #000;
 }
 #waline-wrap .wl-comment-actions > button:not(last-child) {
   padding-right: 4px;
@@ -5891,11 +5887,7 @@ blockquote.pullquote.right {
   line-height: 24px;
 }
 #algolia-search .search-dialog .ais-Pagination .ais-Pagination-item--selected a {
-  background: -webkit-linear-gradient(top, #3cf 0%, #f9c 100%);
-  background: -moz-linear-gradient(top, #3cf 0%, #f9c 100%);
-  background: -o-linear-gradient(top, #3cf 0%, #f9c 100%);
-  background: -ms-linear-gradient(top, #3cf 0%, #f9c 100%);
-  background: linear-gradient(to bottom, #3cf 0%, #f9c 100%);
+  background: #000;
   color: #eee;
   cursor: default;
 }
