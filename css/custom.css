@@ -23,42 +23,6 @@
     display: flex;
 }
 
-.t-top .t-t-l {
-    display: flex;
-    flex-direction: column;
-    flex: 1.4;
-    margin-right: 10px;
-}
-
-.t-top .t-t-l .bg-ad {
-    width: 85%;
-    border-radius: 10px;
-    padding: 0 10px;
-}
-
-.btn-xz-box {
-    margin-top: 10px;
-}
-
-.btn-xz {
-    display: block;
-    background-color: var(--btn-bg);
-    color: var(--btn-color);
-    text-align: center;
-    line-height: 2.4;
-    margin: 8px 0;
-    cursor: pointer !important;
-}
-
-.btn-xz:hover {
-    text-decoration: none !important;
-
-}
-
-.btn-xz-box:hover .btn-xz {
-    background-color: rgb(255, 255, 255);
-}
-
 .t-top .t-t-r {
     display: flex;
     flex-direction: column;
@@ -80,12 +44,12 @@
 
 .ft-links li a:hover {
     text-decoration: none !important;
-    color: #000000 !important;
+    color: #ffffff !important;
 }
 
 .ft-t {
-    font-size: 0.8rem;
-    margin-bottom: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 0px;
     line-height: 1;
     font-weight: 600;
 }
