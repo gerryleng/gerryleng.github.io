@@ -340,13 +340,6 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/Fundamentals-of-computational-thinking/</loc>
-    <lastmod>2023-07-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://gerryleng.com/tags/Waves/</loc>
     <lastmod>2023-07-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -355,6 +348,13 @@
   
   <url>
     <loc>https://gerryleng.com/tags/Mechanics/</loc>
+    <lastmod>2023-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://gerryleng.com/tags/Fundamentals-of-computational-thinking/</loc>
     <lastmod>2023-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
