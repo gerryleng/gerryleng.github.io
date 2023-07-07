@@ -40,18 +40,13 @@
     width: 50%;
     cursor: pointer !important;
     color: #000000 !important;
+    font-size: medium !important;
 }
 
 .ft-links li a:hover {
     text-decoration: none !important;
     color: #ffffff !important;
-}
-
-.ft-t {
-    font-size: 1.2rem;
-    margin-bottom: 0px;
-    line-height: 1;
-    font-weight: 600;
+    font-size: large !important;
 }
 
 .t-l-t {
@@ -63,24 +58,11 @@
     .ft-item-1 {
         flex-basis: 100% !important;
     }
-
-    .ft-item-2 {
-        flex-basis: 100% !important;
-    }
-
-    .t-top .t-t-l .bg-ad {
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 576px) {
     .t-top {
         flex-wrap: wrap;
-    }
-
-    .t-top .t-t-l {
-        flex-basis: 100% !important;
-
     }
 
     .t-top .t-t-r {
