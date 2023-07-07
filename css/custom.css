@@ -6,7 +6,6 @@
     color: rgb(0, 0, 0) !important;
     text-align: left;
     flex-wrap: wrap;
-    color: #000000 !important;
 }
 
 .ft-item-1 {
@@ -76,6 +75,7 @@
     display: inline-block !important;
     width: 50%;
     cursor: pointer !important;
+    color: #000000 !important;
 }
 
 .ft-links li a:hover {
