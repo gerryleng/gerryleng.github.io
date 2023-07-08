@@ -335,20 +335,6 @@
 
   
   <url>
-    <loc>https://gerryleng.com/tags/Particles-and-Radiation/</loc>
-    <lastmod>2023-07-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://gerryleng.com/tags/EM-Radiation-and-Quantum-Phenomena/</loc>
-    <lastmod>2023-07-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://gerryleng.com/tags/Journal/</loc>
     <lastmod>2023-07-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -363,6 +349,20 @@
   </url>
   
   <url>
+    <loc>https://gerryleng.com/tags/Mechanics/</loc>
+    <lastmod>2023-07-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://gerryleng.com/tags/EM-Radiation-and-Quantum-Phenomena/</loc>
+    <lastmod>2023-07-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://gerryleng.com/tags/Fundamentals-of-computational-thinking/</loc>
     <lastmod>2023-07-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -370,7 +370,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/Mechanics/</loc>
+    <loc>https://gerryleng.com/tags/Particles-and-Radiation/</loc>
     <lastmod>2023-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -398,14 +398,14 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/Electricity/</loc>
+    <loc>https://gerryleng.com/tags/Further-Mechanics/</loc>
     <lastmod>2023-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/Further-Mechanics/</loc>
+    <loc>https://gerryleng.com/tags/Electricity/</loc>
     <lastmod>2023-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -421,14 +421,14 @@
 
   
   <url>
-    <loc>https://gerryleng.com/categories/Physics/</loc>
+    <loc>https://gerryleng.com/categories/Journal/</loc>
     <lastmod>2023-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://gerryleng.com/categories/Journal/</loc>
+    <loc>https://gerryleng.com/categories/Physics/</loc>
     <lastmod>2023-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
