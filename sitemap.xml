@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gerryleng.com/posts/25c1b6cd.html</loc>
+    
+    <lastmod>2023-07-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://gerryleng.com/posts/4a79e4cf.html</loc>
     
     <lastmod>2023-07-14</lastmod>
@@ -30,15 +39,6 @@
   
   <url>
     <loc>https://gerryleng.com/journal/index.html</loc>
-    
-    <lastmod>2023-07-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://gerryleng.com/posts/25c1b6cd.html</loc>
     
     <lastmod>2023-07-14</lastmod>
     
@@ -346,99 +346,99 @@
 
   <url>
     <loc>https://gerryleng.com/</loc>
-    <lastmod>2023-07-14</lastmod>
+    <lastmod>2023-07-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://gerryleng.com/tags/Particles-and-Radiation/</loc>
-    <lastmod>2023-07-14</lastmod>
+    <loc>https://gerryleng.com/tags/Journal/</loc>
+    <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://gerryleng.com/tags/EM-Radiation-and-Quantum-Phenomena/</loc>
-    <lastmod>2023-07-14</lastmod>
+    <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/Journal/</loc>
-    <lastmod>2023-07-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://gerryleng.com/tags/Waves/</loc>
-    <lastmod>2023-07-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://gerryleng.com/tags/Mechanics/</loc>
-    <lastmod>2023-07-14</lastmod>
+    <loc>https://gerryleng.com/tags/Particles-and-Radiation/</loc>
+    <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://gerryleng.com/tags/Fundamentals-of-computational-thinking/</loc>
-    <lastmod>2023-07-14</lastmod>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://gerryleng.com/tags/Mechanics/</loc>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://gerryleng.com/tags/Waves/</loc>
+    <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://gerryleng.com/tags/Fundamentals-of-data-representation/</loc>
-    <lastmod>2023-07-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://gerryleng.com/tags/Materials/</loc>
-    <lastmod>2023-07-14</lastmod>
+    <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://gerryleng.com/tags/Fundamentals-of-computer-systems/</loc>
-    <lastmod>2023-07-14</lastmod>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://gerryleng.com/tags/Materials/</loc>
+    <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://gerryleng.com/tags/Electricity/</loc>
-    <lastmod>2023-07-14</lastmod>
+    <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://gerryleng.com/tags/Further-Mechanics/</loc>
-    <lastmod>2023-07-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://gerryleng.com/tags/English-Grammar/</loc>
-    <lastmod>2023-07-14</lastmod>
+    <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://gerryleng.com/tags/English-Vocabulary/</loc>
-    <lastmod>2023-07-14</lastmod>
+    <lastmod>2023-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://gerryleng.com/tags/English-Grammar/</loc>
+    <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -446,29 +446,29 @@
 
   
   <url>
-    <loc>https://gerryleng.com/categories/Physics/</loc>
-    <lastmod>2023-07-14</lastmod>
+    <loc>https://gerryleng.com/categories/Journal/</loc>
+    <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://gerryleng.com/categories/Journal/</loc>
-    <lastmod>2023-07-14</lastmod>
+    <loc>https://gerryleng.com/categories/Physics/</loc>
+    <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://gerryleng.com/categories/Computer-Science/</loc>
-    <lastmod>2023-07-14</lastmod>
+    <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://gerryleng.com/categories/EAL/</loc>
-    <lastmod>2023-07-14</lastmod>
+    <lastmod>2023-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
