@@ -392,14 +392,14 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/Mechanics/</loc>
+    <loc>https://gerryleng.com/tags/Waves/</loc>
     <lastmod>2023-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/Waves/</loc>
+    <loc>https://gerryleng.com/tags/Mechanics/</loc>
     <lastmod>2023-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -441,14 +441,21 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/English-Vocabulary/</loc>
+    <loc>https://gerryleng.com/tags/Further-Mechanics/</loc>
     <lastmod>2023-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/Further-Mechanics/</loc>
+    <loc>https://gerryleng.com/tags/English-Grammar/</loc>
+    <lastmod>2023-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://gerryleng.com/tags/English-Vocabulary/</loc>
     <lastmod>2023-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -463,13 +470,6 @@
   
   <url>
     <loc>https://gerryleng.com/tags/IELTS-Writing/</loc>
-    <lastmod>2023-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://gerryleng.com/tags/English-Grammar/</loc>
     <lastmod>2023-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
