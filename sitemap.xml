@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gerryleng.com/journal/index.html</loc>
+    
+    <lastmod>2023-07-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://gerryleng.com/posts/fb096e94.html</loc>
     
     <lastmod>2023-07-19</lastmod>
@@ -23,15 +32,6 @@
     <loc>https://gerryleng.com/posts/fce1b4a7.html</loc>
     
     <lastmod>2023-07-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://gerryleng.com/journal/index.html</loc>
-    
-    <lastmod>2023-07-14</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
