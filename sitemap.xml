@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gerryleng.com/posts/751bd87b.html</loc>
+    
+    <lastmod>2023-07-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://gerryleng.com/drawings/index.html</loc>
     
     <lastmod>2023-07-28</lastmod>
@@ -365,14 +374,14 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/Fundamentals-of-computational-thinking/</loc>
+    <loc>https://gerryleng.com/tags/Mechanics/</loc>
     <lastmod>2023-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/Mechanics/</loc>
+    <loc>https://gerryleng.com/tags/Fundamentals-of-computational-thinking/</loc>
     <lastmod>2023-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -386,14 +395,14 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/Materials/</loc>
+    <loc>https://gerryleng.com/tags/Fundamentals-of-computer-systems/</loc>
     <lastmod>2023-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/Fundamentals-of-computer-systems/</loc>
+    <loc>https://gerryleng.com/tags/Materials/</loc>
     <lastmod>2023-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -414,7 +423,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/IELTS-Writing/</loc>
+    <loc>https://gerryleng.com/tags/Drawings/</loc>
     <lastmod>2023-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -422,6 +431,13 @@
   
   <url>
     <loc>https://gerryleng.com/tags/IELTS-Speaking/</loc>
+    <lastmod>2023-07-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://gerryleng.com/tags/IELTS-Writing/</loc>
     <lastmod>2023-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
