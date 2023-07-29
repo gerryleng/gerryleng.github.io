@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://gerryleng.com/music/index.html</loc>
+    <loc>https://gerryleng.com/psychology/index.html</loc>
     
     <lastmod>2023-07-29</lastmod>
     
@@ -12,6 +12,15 @@
   
   <url>
     <loc>https://gerryleng.com/faq/index.html</loc>
+    
+    <lastmod>2023-07-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://gerryleng.com/music/index.html</loc>
     
     <lastmod>2023-07-29</lastmod>
     
@@ -392,14 +401,14 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/Waves/</loc>
+    <loc>https://gerryleng.com/tags/Fundamentals-of-computational-thinking/</loc>
     <lastmod>2023-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/Fundamentals-of-computational-thinking/</loc>
+    <loc>https://gerryleng.com/tags/Waves/</loc>
     <lastmod>2023-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -441,7 +450,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/IELTS-Speaking/</loc>
+    <loc>https://gerryleng.com/tags/Drawings/</loc>
     <lastmod>2023-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -455,7 +464,7 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/Drawings/</loc>
+    <loc>https://gerryleng.com/tags/IELTS-Speaking/</loc>
     <lastmod>2023-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
