@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://gerryleng.com/psychology/index.html</loc>
+    <loc>https://gerryleng.com/posts/f8294a3d.html</loc>
     
     <lastmod>2023-07-29</lastmod>
     
@@ -387,20 +387,6 @@
   </url>
   
   <url>
-    <loc>https://gerryleng.com/tags/EM-Radiation-and-Quantum-Phenomena/</loc>
-    <lastmod>2023-07-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://gerryleng.com/tags/Waves/</loc>
-    <lastmod>2023-07-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://gerryleng.com/tags/Fundamentals-of-computational-thinking/</loc>
     <lastmod>2023-07-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -408,7 +394,21 @@
   </url>
   
   <url>
+    <loc>https://gerryleng.com/tags/EM-Radiation-and-Quantum-Phenomena/</loc>
+    <lastmod>2023-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://gerryleng.com/tags/Mechanics/</loc>
+    <lastmod>2023-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://gerryleng.com/tags/Waves/</loc>
     <lastmod>2023-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -443,7 +443,21 @@
   </url>
   
   <url>
+    <loc>https://gerryleng.com/tags/Psychology/</loc>
+    <lastmod>2023-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://gerryleng.com/tags/Further-Mechanics/</loc>
+    <lastmod>2023-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://gerryleng.com/tags/IELTS-Writing/</loc>
     <lastmod>2023-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -458,13 +472,6 @@
   
   <url>
     <loc>https://gerryleng.com/tags/IELTS-Speaking/</loc>
-    <lastmod>2023-07-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://gerryleng.com/tags/IELTS-Writing/</loc>
     <lastmod>2023-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
